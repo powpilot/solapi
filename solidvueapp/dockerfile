@@ -1,0 +1,12 @@
+FROM node:14.19.1
+WORKDIR /
+COPY ./package*.json ./
+RUN npm install
+COPY . .
+RUN npm run build
+EXPOSE 8080
+
+
+
+
+CMD ["npm", "run-script","serve"]
