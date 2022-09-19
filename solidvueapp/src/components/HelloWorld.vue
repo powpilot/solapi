@@ -109,8 +109,7 @@ export default {
         })
     },
     iDatechange: function () {
-      console.log(this.mydate);
-     // let iurl = 'http://localhost:3000/quotesforinterval/' + this.startdate+ '/' +   this.enddate+ '/ '+ this.tracked;
+      console.log(this.mydate);  
       let iurl = 'http://localhost:3000/quotesforinterval/' + this.startdate+ '/' +   this.enddate+ '/'+ this.tracked;
       console.log(iurl);
       axios
